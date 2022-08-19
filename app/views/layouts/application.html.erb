@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar p-3 sticky-top">
+      <%= link_to lists_path do %>
+        <i class="fa-solid fa-house btn btn-outline-primary"></i>
+      <% end %>
+      <%= link_to "New List", new_list_path, class: "btn btn-outline-primary hoverable" %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
