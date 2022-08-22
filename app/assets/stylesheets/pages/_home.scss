@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random/");
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random/");
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -14,8 +14,7 @@
   }
 }
 
-.bg-for-card{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random/");
+.custom-card-bg{
   background-size: cover;
   background-position: center;
   width: 28rem;

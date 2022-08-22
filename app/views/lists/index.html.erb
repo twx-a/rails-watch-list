@@ -4,16 +4,17 @@
   </div>
 </div>
 <hr>
-<p><strong>List:</strong></p>
+<h2><strong>List:</strong></h2>
 <div class="row justify-content-center">
   <% @lists.each do |list| %>
-    <div class="card col-12 col-md-6 col-xl-2 m-2 pt-3 bg-for-card">
-      <div id="list-button-center">
-        <%= link_to list.name, list_path(list), class: "btn btn-outline-success col-8", style: "width: 8rem"  %>
-      </div>
-      <div id="list-button-end">
-        <%= link_to "Delete", list_path(list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-outline-warning col-8", style: "width: 8rem"  %>
-      </div>
+    <div class="card col-12 col-md-6 col-xl-2 m-2 pt-3 custom-card-bg"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<%= cl_image_tag list.photo.key %>' ) ">
+        <div id="list-button-center">
+          <%= link_to list.name, list_path(list), class: "btn btn-outline-success col-8", style: "width: 8rem"  %>
+        </div>
+        <div id="list-button-end">
+          <%= link_to "Delete", list_path(list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-outline-warning col-8", style: "width: 8rem"  %>
+        </div>
     </div>
   <% end %>
 </div>
