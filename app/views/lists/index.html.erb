@@ -1,4 +1,5 @@
-<div class="banner">
+<div class="banner"
+style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<%= cl_image_path 'def-banner-bg_pshesh' %>')">
   <div class="container">
     <h1>Save any kind of movies</h1>
   </div>
@@ -8,7 +9,7 @@
 <div class="row justify-content-center">
   <% @lists.each do |list| %>
     <div class="card col-12 col-md-6 col-xl-2 m-2 pt-3 custom-card-bg"
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<%= cl_image_tag list.photo.key %>' ) ">
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<%= cl_image_path list.photo.key? ? list.photo.key : "def-image_k4hgrm"  %>' ) ">
         <div id="list-button-center">
           <%= link_to list.name, list_path(list), class: "btn btn-outline-success col-8", style: "width: 8rem"  %>
         </div>
