@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  h1{
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.bg-for-card{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-position: center;
+  width: 28rem;
+  height:20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#list-button-end{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+#list-button-center{
+  width: auto;
+  height: 50%;
+  position: absolute;
+  top: 42%;
+}
